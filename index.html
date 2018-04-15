@@ -18,7 +18,7 @@
     function onEachFeature(feature, layer) {
       // does this feature have a property named popupContent?
       if (feature.properties && feature.properties.title) {
-      	var popuphtml = "<strong>" + feature.properties.title + "</strong><ul><li>Notes: " + feature.properties.notes + "</li><li>Property 3: " + feature.properties.property3 + "</li></ul>";
+      	var popuphtml = "<strong>" + feature.properties.title + "</strong><ul><li>Access Name: " + feature.properties.access_name + "</li><li>Water Body: " + feature.properties.water_body + "</li><li>Parking Spaces: " + feature.properties.parking_spaces + "</li><li>Picnic Shelter: " + feature.properties.picnic_shelter + "</li><li>Restrooms: " + feature.properties.restrooms + "</li><li>Handicap Accessible: " + feature.properties.handicap_accessible + "</li></ul>";
         layer.bindPopup(popuphtml);
       }
     }
